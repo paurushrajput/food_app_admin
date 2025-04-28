@@ -1,0 +1,41 @@
+{
+  "name": "food-app",
+  "version": "1.0.0",
+  "description": "Food App Application",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "migrate:create": "node ./config/runMigration.js create",
+    "migrate:up": "node ./config/runMigration.js up",
+    "migrate:down": "node ./config/runMigration.js down"
+  },
+  "keywords": [],
+  "author": "Shubham Kumar Shukla",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.429.0",
+    "@fastify/cors": "^8.4.0",
+    "@fastify/multipart": "^8.0.0",
+    "aws-sdk": "^2.1471.0",
+    "axios": "^1.7.2",
+    "bcrypt": "^5.1.1",
+    "db-migrate": "^0.11.14",
+    "db-migrate-mysql": "^2.3.2",
+    "dotenv": "^16.3.1",
+    "fastify": "^4.0.0",
+    "firebase-admin": "^11.11.0",
+    "geoip-lite": "^1.4.10",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.29.4",
+    "moment-timezone": "^0.5.43",
+    "mongoose": "^7.5.3",
+    "mysql2": "^3.6.1",
+    "node-cron": "^3.0.3",
+    "nodemon": "^3.0.1",
+    "pg": "^8.13.1",
+    "redis": "^4.6.10",
+    "twilio": "^4.18.0",
+    "xml2js": "^0.6.2"
+  }
+}
